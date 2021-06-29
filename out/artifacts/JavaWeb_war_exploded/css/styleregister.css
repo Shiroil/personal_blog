@@ -1,0 +1,52 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url("../img/b5.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.submit {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 150px auto auto;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.form_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.form_input {
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+}
+.btn_submit {
+    align-self: center;
+}
+
+.btn {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    background: white;
+    margin-top: 40px;
+}

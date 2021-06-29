@@ -1,0 +1,172 @@
+/* 0.给所有元素统一设置一些样式：
+        将所有元素的默认边距归零，防止影响后期的布局 */
+* {
+    padding: 0;
+    margin: 0;
+}
+/* 1.给网页分区并设置每个区域的尺寸 */
+div {
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.logo {
+    width: 960px;
+    height: 61px;
+}
+.menu {
+    height: 91px;
+}
+.core {
+    height: 410px;
+    /* 设置顶部内边距的作用是为了预留渐变条区域 */
+    padding-top: 10px;
+}
+.copr {
+    width: 960px;
+    height: 50px;
+}
+.content {
+    width: 950px;
+    height: 390px;
+    border: 5px solid #8ac1db;
+}
+.content>div {
+    width: 910px;
+    height: 40px;
+}
+/* 等价于.data，加入父元素可以提高优先级 */
+.content>.data {
+    height: 310px;
+}
+/* 2.设置背景 */
+body {
+    background-color: #0EA8D8;
+}
+.menu {
+    background-color: #0488B8;
+}
+.content {
+    background-color: #E8F3F8;
+}
+/* 3.设置文本样式 */
+body {
+    font-family: "微软雅黑","文泉驿正黑","黑体";
+    font-size: 14px;
+}
+.logo {
+    text-align: right;
+    line-height: 61px;
+}
+.logo>a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #FFF;
+}
+.logo>a:hover {
+    font-weight: bold;
+}
+.copr>p {
+    text-align: center;
+    color: #FFF;
+    line-height: 25px;
+    height: 25px;
+}
+/* 4.设置表格样式 */
+.data>table {
+    border:1px solid #ccc;
+    /* 边框合并必须写在table上 */
+    border-collapse: collapse;
+}
+.data td {
+    border: 1px solid #ccc;
+}
+.data>table {
+    width: 100%;
+}
+.data td {
+    text-align: center;
+}
+.data thead tr {
+    background-color: #FBEDCE;
+    font-weight: bold;
+    height: 40px;
+}
+.data tbody tr {
+    background-color: #FFF;
+    height: 32px;
+}
+.data tbody tr:hover {
+    background-color: #F7F9FD;
+}
+.update {
+    width: auto;
+    height: 100px;
+    padding-left: 15px;
+    border: 0;
+    margin-right: auto;
+}
+.delete {
+    padding-left: 13px;
+    border: 0;
+}
+/* 5.定位logo图片以及消息提示区域 */
+.logo>img {
+    float: left;
+}
+.content>.msg {
+    width: 500px;
+    height: 80px;
+}
+.content {
+    position: relative;
+}
+.content>.msg {
+    position: absolute;
+    top: 110px;
+    left: 225px;
+}
+.msg>img {
+    float: right;
+    margin: 5px;
+    /* 将鼠标编程手型 */
+    cursor: pointer;
+}
+.msg>p {
+    line-height: 80px;
+    margin-left: 38px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* 6.设置菜单区图标的样式 */
+.menu>ul {
+    border: 1px solid yellow;
+    width: 960px;
+    height: 91px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+.menu li {
+    border: 1px solid yellow;
+    width: 68px;
+    height: 77px;
+    margin: 7px 14px;
+    float: left;
+}
+.break1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50px;
+    left: 50px;
+    right: auto;
+    bottom: auto;
+    color: whitesmoke;
+
+}
+
+
+/* 收尾：去掉开发过程中用来调试的边框 */
+div, .menu>ul, .menu li {
+    border: 0;
+}
