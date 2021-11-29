@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>漠丶叹尘的空间</title>
+    <title>Shiro的空间</title>
     <link rel="icon" sizes="any" mask href="http://qzonestyle.gtimg.cn/qzone/v8/img/Qzone.svg">
     <link type="text/css" href="${pageContext.request.contextPath}/css/styletipe4.css" rel="stylesheet" />
 </head>
